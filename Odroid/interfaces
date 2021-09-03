@@ -1,0 +1,17 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+# Include files from /etc/network/interfaces.d:
+source-directory /etc/network/interfaces.d
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+
+auto wlan0
+iface wlan0 inet static
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+    address 192.168.35.21
+    netmask 255.255.255.0
+    gateway 192.168.35.1
+    dns-nameservers 210.220.163.82

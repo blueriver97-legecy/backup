@@ -1,0 +1,5 @@
+echo zone0 : $(cat /sys/devices/virtual/thermal/thermal_zone0/temp)
+echo zone1 : $(cat /sys/devices/virtual/thermal/thermal_zone1/temp)
+echo zone2 : $(cat /sys/devices/virtual/thermal/thermal_zone2/temp)
+echo zone3 : $(cat /sys/devices/virtual/thermal/thermal_zone3/temp)
+echo zone4 : $(cat /sys/devices/virtual/thermal/thermal_zone4/temp)
